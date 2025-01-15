@@ -20,9 +20,9 @@ class UserView:
             print(i.get("name"))
             Label(self.m, text=i.get("name"), width=10,anchor="w",font='Helvetica 12').grid(row=j, column=0, padx=5, pady=2)
             Label(self.m, text=i.get("direction"), width=20,anchor="w",font='Helvetica 12').grid(row=j, column=1, padx=5, pady=2)
-            Label(self.m, text=i.get("scheduled"), width=10,anchor="w",font='Helvetica 12').grid(row=j, column=2, padx=5, pady=2)
-            Label(self.m, text=i.get("actual"), width=10,anchor="w",font='Helvetica 12').grid(row=j, column=3, padx=5, pady=2)
-            Label(self.m, text=i.get("within"), width=10,anchor="w",font='Helvetica 12').grid(row=j, column=4, padx=5, pady=2)
+            Label(self.m, text=i.get("time"), width=10,anchor="w",font='Helvetica 12').grid(row=j, column=2, padx=5, pady=2)
+            Label(self.m, text=i.get("rtTime"), width=10,anchor="w",font='Helvetica 12').grid(row=j, column=3, padx=5, pady=2)
+            Label(self.m, text=i.get("timeDelta"), width=10,anchor="w",font='Helvetica 12').grid(row=j, column=4, padx=5, pady=2)
             j+=1
             self.refresh_button = Button(self.m, text="Refresh", command=self.refresh).grid(row=4, column=10, padx=10, pady=15)          
 
